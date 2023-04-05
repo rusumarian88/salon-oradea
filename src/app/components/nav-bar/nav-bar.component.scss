@@ -1,0 +1,65 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: block;
+}
+
+.bar{
+    padding:12px 0;
+    background-color:black;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:8px;
+    @include latime;
+}
+
+.logo{
+    display: inline-block;
+    vertical-align: middle;
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    border:1px solid aqua;
+}
+
+.program{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    color:#39b4d6;
+    margin-left: 12px;
+    font-family: 'Alkatra',cursive;
+}
+
+.contact{
+    font-size: 16px;
+    color: white;
+    font-family: 'Alkatra',cursive;
+}
+
+.icon{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+@media screen and (max-width:$max-width-break-point) {
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
+    .program{
+        font-size: 10px;
+    }
+    .contact,.icon{
+        font-size: 10px;
+    }
+}

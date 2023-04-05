@@ -1,0 +1,187 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: block;
+}
+
+.heder{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    // background-image: url("https://freedesignfile.com/upload/2018/12/blue-abstract-background-vector-graphic-39281.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items:center;
+    gap:100px;
+    @include latime;
+}
+
+.ph1{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-image: url("https://www.eximia.ro/wp-content/uploads/2021/06/EXIMIA-HR77-Platinum-Anniversary-2020-31-552x1024.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow:-10px 5px 15px 10px #d3d3d3;
+}
+
+.ph2{
+    width:190px;
+    height:190px;
+    border-radius: 50%;
+    background-image: url("https://chicsalon.ro/wp-content/uploads/2017/03/Cum-se-realizeaza-tratamentul.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow:-10px 5px 15px 10px #d3d3d3;
+}
+
+.logo{
+    height: 240px;
+    width: 240px;
+    border-radius: 15px;
+    border:1px solid aqua;
+    background-image: url("/assets/logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ph3{
+    width: 165px;
+    height:165px;
+    border-radius:50%;
+    background-image: url("https://konturbeautylabs.ro/wp-content/uploads/2021/07/Oxygenera-PRO_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow:10px 5px 15px 10px #d3d3d3;
+}
+
+.ph4{
+    width: 210px;
+    height:210px;
+    border-radius:50%;
+    background-image: url("https://www.beautyone.ro/img/cms/APARATE/Cryomed%20EVO/Cryomed-EVO.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow:10px 5px 15px 10px #d3d3d3;
+}
+
+.column-a,.column-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.column-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.adress{
+    font-size: 16px;
+    line-height: 18px;
+    color:gray;
+    text-align: center;
+    font-family: 'Alkatra',cursive;
+}
+
+.partner{
+    width: 100px;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:925px) {
+    .content{
+        gap:24px;
+    }
+    .logo{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .ph1{
+        width:175px;
+        height:175px;
+    }
+    .ph2{
+        width: 140px;
+        height: 140px;
+    }
+    .ph3{
+        width: 145px;
+        height: 145px;
+    }
+    .ph4{
+        width: 125px;
+        height: 125px;
+    }
+    .logo{
+        width: 160px;
+        height: 160px;
+    }
+    .adress{
+        font-size: 12px;
+    }
+    .partner{
+        width: 65px;
+    }
+}
+
+@media screen and (max-width:$max-width-break-point) {
+    .ph1{
+        width:125px;
+        height:125px;
+    }
+    .ph2{
+        width: 90px;
+        height: 90px;
+    }
+    .ph3{
+        width: 85px;
+        height: 85px;
+    }
+    .ph4{
+        width: 80px;
+        height: 80px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
+    .adress{
+        font-size: 10px;
+    }
+    .partner{
+        width: 45px;
+    }
+    .icon{
+        font-size: 14px;
+    }
+}
