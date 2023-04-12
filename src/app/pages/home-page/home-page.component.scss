@@ -98,6 +98,7 @@
     border-radius: 10px;
     border: 1px solid aqua;
     cursor: pointer;
+    font-family: 'Alkatra',cursive;
 }
 
 @media screen and (max-width:$max-width-break-point) {
@@ -118,6 +119,7 @@
         font-size: 13px;
     }
     .button{
+        font-size: 20px;
         width: 80%;
     }
 }
